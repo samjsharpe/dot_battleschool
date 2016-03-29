@@ -1,0 +1,46 @@
+---
+- hosts: workstation
+
+  tasks:
+    - name: install ack from homebrew
+      sudo: false
+      homebrew: update_homebrew=yes state=latest name=ack
+    - name: install elinks from homebrew
+      sudo: false
+      homebrew: state=latest name=elinks
+    - name: install freerdp from homebrew
+      sudo: false
+      homebrew: state=latest name=homebrew/x11/freerdp
+    - name: install git from homebrew
+      sudo: false
+      homebrew: state=latest name=git
+    - name: install grc from homebrew
+      sudo: false
+      homebrew: update_homebrew=yes state=latest name=grc
+    - name: install htop-osx from homebrew
+      sudo: false
+      homebrew: state=latest name=htop-osx
+    - name: install keychain from homebrew
+      sudo: false
+      homebrew: state=latest name=keychain
+    - name: install oath-toolkit from homebrew
+      sudo: false
+      homebrew: state=latest name=oath-toolkit
+    - name: install openconnect from homebrew
+      sudo: false
+      homebrew: state=latest name=openconnect
+    - name: install python from homebrew
+      sudo: false
+      homebrew: state=latest name=python
+    - name: install sshpass from homebrew
+      sudo: false
+      homebrew: state=latest name=sshpass
+    - name: install zsh from homebrew
+      sudo: false
+      homebrew: state=latest name=zsh
+    - name: install zsh-completions from homebrew
+      sudo: false
+      homebrew: state=latest name=zsh-completions
+    - name: upgrade all other homebrew packages
+      sudo: false
+      homebrew: upgrade_all=yes
