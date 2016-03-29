@@ -1,0 +1,17 @@
+---
+sources:
+  local:
+    - homebrew.yml
+    - alfred.yml
+    - atom.yml
+    - dropbox.yml
+    - fantastical.yml
+    - firefox.yml
+    - flux.yml
+    - iterm2.yml
+    - karabiner.yml
+    - oh-my-zsh.yml
+    - skype.yml
+    - spectacle.yml
+    - vagrant.yml
+    - vlc.yml
