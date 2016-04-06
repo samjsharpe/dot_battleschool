@@ -14,6 +14,9 @@
     - name: install git from homebrew
       sudo: false
       homebrew: state=latest name=git
+    - name: install golang from homebrew
+      sudo: false
+      homebrew: state=latest name=golang
     - name: install grc from homebrew
       sudo: false
       homebrew: update_homebrew=yes state=latest name=grc
